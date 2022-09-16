@@ -1,14 +1,11 @@
-from re import A
-
-
 available_blobs = ['Fire blob', 'Water blob', 'Grass blob']
 class fire_blob :
     def super(blob):
 
-class fire_blob :
+class water_blob :
     def super(blob):
 
-class fire_blobv :
+class grass_blob :
     def super(blob):
 
 

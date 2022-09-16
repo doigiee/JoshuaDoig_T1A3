@@ -19,9 +19,14 @@ This game allows users to do activities with their virtual pet blob such as : wa
 # Day 1
 Brainstormed ideas, submitted this one, got it appoved, created file on linux wsl linked to VScode, setup a virtual environment (venv.), git init,  git add . , git commit -m 'Inital Commit', and git push to my github repository as JoshuaDoig_T1A3. Then finished my flowchart and setup a Trello to track progress.
 # Day 2 
-following my flowchart begun making pseudocode on main.py, functions and imports can be added and sorted out later. Basically creating bare bones as '#' comments so that all will be left is to figure out the coding side of things.
+Following my flowchart, began making pseudocode on main.py, functions and imports can be added and sorted out later. Basically creating bare bones and skeleton as '#' comments so that all will be left to do is figure out the code. (Had house inspection today so was busy for 2/3 of the day).
+
 # Day 3 
 # Day 4 
 # Day 5 
 # Day 6 
 # Day 7 
+# Day 8 
+# Day 9 
+# Day 10 
+# Day 11
