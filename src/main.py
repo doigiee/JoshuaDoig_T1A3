@@ -1,11 +1,14 @@
 import  pixel_art
-from storage import fire_blob
+#from storage import fire_blob
 #import functions
 #import classes
 
+#input potientials
 yes_variants = ("Y", "y", "Yes", "YES", "yes")
 no_variants = ("N", "n", "No", "NO", "no")
 one_variants = ("One", "one", "1", "1.")
+two_variants = ("Two", "two", "2", "2.")
+three_variants = ("Three", "three", "3", "3.")
 
 class blob():
     def __init__(self, name, species, hp, level, atk, XP):
@@ -15,6 +18,8 @@ class blob():
         self.level = level
         self.atk = atk
         self.XP = XP
+
+blob()
 
 fire_blob = blob('calcifer', 'fire', 100, level = 1, atk = 25)
 water_blob = blob('Rimuru', 'water', 100, level = 25, atk = 1)
@@ -33,8 +38,6 @@ def next(prompt):
 def main_program():
 
 #game title
-    pixel_art.The_Blob_Game_Title
-
     pixel_art.The_Blob_Game_Title_2
 
 #indroductiory text, choose blob text, continue prompt
@@ -56,12 +59,30 @@ def main_program():
         print('----------------------------------------------------------------')
 
     print(choose_blob_selection)
-        if input == one_variants:
-            blob = fire_blob
-        elif input == one_variants:
-            blob = water_blob
-        elif input == one_variants:
-            blob = grass_blob
+    if input == one_variants:
+        blob = fire_blob
+    elif input == two_variants:
+        blob = water_blob
+    elif input == three_variants:
+        blob = grass_blob
+
+# set player blob attribute
+
+# ask what activites would like to do
+
+# do the operation and - 1 of 3 from daily activites value
+
+# every 3 activites refresh blob hp and Game Over counter =-1 and ask question relating to blob
+
+# check for instance of GAME OVER counter reaching 0 days or 0 hp after each activity
+# e.g if Gamer Over counter == 0 or hp == 0 print GAME OVER and return main_program
+
+# if level == 100 print CONGRATULATIONS and return main_progrm
+# def WIN_GAME():
+#   Blob_level_100 = True
+#return Blob_level_100
+# print(WIN GAMW ()) 
+
 
 
 main_program()
