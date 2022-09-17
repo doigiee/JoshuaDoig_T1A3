@@ -1,4 +1,9 @@
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 import  pixel_art as pa
+
+
 #from storage import fire_blob
 #import functions
 #import classes
@@ -49,6 +54,9 @@ def main_program():
 #game title
     pa
 
+    print(Fore.RED + 'some red text')
+    print(Back.CYAN + 'cyan text')
+    print(Style.BRIGHT + 'BRIGHT')
 
     print(introduction_text)
     #continue prompt
