@@ -1,20 +1,26 @@
-class XP:
+class level:
     def __init__(self, XP):
         self.XP = XP
 
+class days:
+    def __init__(self, days_left):
+        self.days_left = days_left
+
+class Character:
+    __available_species = ['Fire-blob', 'water_blob', 'grass_blob']
+
 class blob():
-    def __init__(self, name, species, hp = 100, level = 1, atk = 1, XP = 0):
+    def __init__(self, name, species, hp, level, atk):
         self.name = name
         self.species = species
         self.hp = hp
         self.level = level
         self.atk = atk
-        self.XP = XP
 
-fire_blob = blob('calcifer', 'fire', 100, level = 1, atk = 1)
-water_blob = blob('Rimuru', 'water', 100, level = 1, atk = 1)
-grass_blob = blob('Gulpin', 'grass', 100, level = 1, atk = 1)
+fire_blob = blob('calcifer', 'fire', 70, level = 1, atk = 50)
+water_blob = blob('Rimuru', 'water', 150, level = 1, atk = 50)
+grass_blob = blob('Gulpin', 'grass', 100, level = 10, atk = 50)
 
-print(fire_blob.name)
-print(water_blob.level)
+#print(fire_blob.name)
+#print(water_blob.level)
 

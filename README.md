@@ -16,12 +16,14 @@ The main Point of the game is for the player to enjoy the challenge of raising t
 This game allows users to do activities with their virtual pet blob such as : walk together, cook together, play together, rest together and battle other slime all in an attempt to gain levels before the due date of the town festival of light.
 
 
-# Day 1
+# Day 1 THURSDAY
 Brainstormed ideas, submitted this one, got it appoved, created file on linux wsl linked to VScode, setup a virtual environment (venv.), git init,  git add . , git commit -m 'Inital Commit', and git push to my github repository as JoshuaDoig_T1A3. Then finished my flowchart and setup a Trello to track progress.
-# Day 2 
+# Day 2 FRIDAY
 Following my flowchart, began making pseudocode on main.py, functions and imports can be added and sorted out later. Basically creating bare bones and skeleton as '#' comments so that all will be left to do is figure out the code. (Had house inspection today so was busy for 2/3 of the day).
 
-# Day 3 
+# Day 3 SATURDAY
+Not a great deal of work was done today, mainly went over some of the ed content I missed.
+
 # Day 4 
 # Day 5 
 # Day 6 
