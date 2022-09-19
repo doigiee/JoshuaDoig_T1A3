@@ -27,7 +27,6 @@ def The_Blob_Game_Title ():
     #print(Fore.RED + 'some red text')
     #print(Back.CYAN + 'cyan text')
     #print(Style.BRIGHT + 'BRIGHT')
-The_Blob_Game_Title ()
     
 
 def Fire_Blob ():
@@ -52,7 +51,6 @@ def Fire_Blob ():
     print(f'{Fore.RED}        ▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒          ')
     print(f'{Fore.RED}              ░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░                ')
     print(f'{Fore.RED}                    ░░░░░░░░░░░░                      ')
-Fire_Blob ()
 
 def Water_Blob ():
     #water_blob
@@ -73,7 +71,6 @@ def Water_Blob ():
     print(f'{Fore.BLUE}              ▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒           ')
     print(f'{Fore.BLUE}                ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒             ')
     print(f'{Fore.BLUE}                    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒                 ')
-Water_Blob ()
 
 #grass_blob
 def Grass_Blob():
@@ -98,4 +95,3 @@ def Grass_Blob():
     print(f'{Fore.GREEN}              ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒              ')
     print(f'{Fore.GREEN}                ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒               ')
     print(f'{Fore.GREEN}                    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒                   ')
-Grass_Blob()

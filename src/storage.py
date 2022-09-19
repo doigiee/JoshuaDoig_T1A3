@@ -9,20 +9,6 @@ class water_blob :
 class grass_blob :
     def super(blob):
 
-
-class time_counter :
-    def __init__(self, days_left):
-        days_left = days_left
-        if days_left == 0: game_over
-
-        break
-
-class game_over:
-    def __init__(self):
-        print("Game Over")
-        return
-
-
 class Pokemon():
     def __init__(self, name, type, pokedexNumber):
         self.name = name
