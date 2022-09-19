@@ -1,3 +1,4 @@
+from xml.dom import InvalidCharacterErr
 import clearing
 clearing.clear()
 import pixel_art as pa
@@ -7,6 +8,12 @@ colorama.init(autoreset=True)
 #import functions
 #import classes
 
+#input potientials
+yes_variants = ("Y", "y", "Yes", "YES", "yes")
+no_variants = ("N", "n", "No", "NO", "no")
+one_variants = ("One", "one", "1")
+two_variants = ("Two", "two", "2")
+three_variants = ("Three", "three", "3")
 
 #letting user set the pace
 def next(prompt):
@@ -16,13 +23,11 @@ def next(prompt):
         print("")
         if answer in (yes_variants):
             return True
+        elif answer not in (no_variants):
+            InvalidCharacterErr 
+            print("InvalidCharacterErr- Please enter either: 'yes', 'no', 'y', 'n'")
 
-#input potientials
-yes_variants = ("Y", "y", "Yes", "YES", "yes")
-no_variants = ("N", "n", "No", "NO", "no")
-one_variants = ("One", "one", "1")
-two_variants = ("Two", "two", "2")
-three_variants = ("Three", "three", "3")
+
 
 #text for Story game
 introduction_text = '\nWelcome to Blobville!\nThe Village needs your help! Evil blobs have invaded the area.\nWe need a pure heart to bring balance back to our World!\n'

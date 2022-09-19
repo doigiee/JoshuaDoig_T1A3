@@ -8,12 +8,15 @@
 #### Trello - Workspace Manager: https://trello.com/w/userworkspace63312559/home
 
 # Statement and Purpose
-'The Blog Game' is a Bash-Terminal executable multichoice virtual pet simulation fantasy Storygame. It's a take on and combination of elements from games like 'Pokemon', 'Tamogachi' and 'multichoice-story game'. In it users are introduced to the world of Tomogato and given the choice between 3 eggs to hatch. The user must then fulfill the town quest. raise a slime to level 100 before the town festival in 3 days. 
+'The Blog Game' is a Terminal executable multichoice Storygame. It's a take on and combination of elements from games like 'Pokemon', 'Tamogachi' and multichoice-story games. In it users are introduced to the world of Tomogato and given the choice between 3 eggs to hatch. The user must then fulfill the town quest. raise a slime to level 100 before the town festival in 3 days. 
 
 The main Point of the game is for the player to enjoy the challenge of raising their blob to level 100 through RNG odds and through making their own choice as to how they want to spend their time leveling up their slime.
 
 # Features
 This game allows users to do activities with their virtual pet blob such as : walk together, cook together, play together, rest together and battle other slime all in an attempt to gain levels before the due date of the town festival of light.
+
+# tests
+had pytest installed and used it freqently to test what parts of my code were working and not working properly.
 
 
 # Day 1 THURSDAY
