@@ -1,3 +1,4 @@
+
 available_blobs = ['Fire blob', 'Water blob', 'Grass blob']
 class fire_blob :
     def super(blob):

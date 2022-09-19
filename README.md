@@ -25,6 +25,8 @@ Following my flowchart, began making pseudocode on main.py, functions and import
 Not a great deal of work was done today, mainly went over some of the ed content I missed.
 
 # Day 4 
+worked from 5 - 3pm  today though was able to import an external module colorama and apply it to my ASCII art. I decided to make the title screen red, blue and green to match the colors of the blobs i have.
+
 # Day 5 
 # Day 6 
 # Day 7 

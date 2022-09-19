@@ -1,8 +1,7 @@
-import colorama
-from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
-import  pixel_art as pa
-
+#import colorama
+#from colorama import Fore, Back, Style
+#colorama.init(autoreset=True)
+import pixel_art as pa
 
 #from storage import fire_blob
 #import functions
@@ -13,7 +12,7 @@ import  pixel_art as pa
 def next(prompt):
     answer = ""
     while True:
-        answer = input(f"\n{prompt}\n'yes' or 'no':")
+        answer = input(f"{prompt}\n'yes' or 'no':")
         print("")
         if answer in (yes_variants):
             return True
@@ -48,15 +47,16 @@ def main_program():
     choose_blob_text = '\nYou are our last chance! Quickly, choose one of these three eggs and raise it to level 100 before the village festival of light in 3 days\n\n\n The fate of our World rests in your hands...\n'
     choose_blob_text = '\n***** Three glistening eggs lay before you, each sublime in their own way *****\n\n A redish burning ember aura radiates from the left-most egg, it calls to those who have no fear in their hearts \n\n The middle-most egg, blue as a clear summer sky, vibrates with rythmic ripples, it calls those who can endure anything\n\n The rightmost egg, green and littered with brownish-yellow vines, shimmers and releases a fragrant aroma, calling those who have no doubt within their heart.\n\n'  
     choose_blob_selection = '1. red egg\n2. blue egg\n3. green egg \n'
+    congrats_text = 'YAY! Your Blob reached level 100 before the town festial.\n !!!CONGRATULATIONS!!!'
+    congrats_text_center = congrats_text.center(20, "O")
+    game_over_text = '\n Sorry but your blob lost all it\'s health.\nGAME OVER'
     
     next_continue = '\nContinue?'
 
-#game title
-    pa
-
-    print(Fore.RED + 'some red text')
-    print(Back.CYAN + 'cyan text')
-    print(Style.BRIGHT + 'BRIGHT')
+    #game title
+    from pixel_art import The_Blob_Game_Title
+    if next(next_continue):
+        print('----------------------------------------------------------------')
 
     print(introduction_text)
     #continue prompt
@@ -70,11 +70,11 @@ def main_program():
 
     print(choose_blob_selection)
     if input == one_variants:
-        blob = fire_blob
+        pixel_art.Fire_Blob
     elif input == two_variants:
-        blob = water_blob
+        pixel_art.Water_Blob
     elif input == three_variants:
-        blob = grass_blob
+        pixel_art.Grass_Blob
 
 # set player blob attribute
 
@@ -93,6 +93,9 @@ def main_program():
 #return Blob_level_100
 # print(WIN GAMW ()) 
 
-
+#Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+#Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+#Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
 main_program()
+
