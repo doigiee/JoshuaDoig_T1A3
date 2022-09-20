@@ -1,12 +1,26 @@
-from xml.dom import InvalidCharacterErr
+
 import clearing
 clearing.clear()
 import pixel_art as pa
 import colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Back
 colorama.init(autoreset=True)
+from xml.dom import InvalidCharacterErr
 #import functions
-#import classes
+import classes
+
+calcifer = classes.Blob('calcifer', 'fire', 70, atk = 50)
+calcifer.set_level = (10)
+rimuru = classes.Blob('rimuru', 'water', 150, atk = 50)
+gulpin = classes.Blob('gulpin', 'grass', 100, atk = 50)
+enemy = classes.enemy(level = 10)
+
+print(enemy.__dict__)
+print(calcifer.__dict__)
+enemy.defeat(calcifer)
+
+print(rimuru.__dict__)
+print(gulpin.__dict__)
 
 #input potientials
 yes_variants = ("Y", "y", "Yes", "YES", "yes")
@@ -32,7 +46,7 @@ def next(prompt):
 #text for Story game
 introduction_text = '\nWelcome to Blobville!\nThe Village needs your help! Evil blobs have invaded the area.\nWe need a pure heart to bring balance back to our World!\n'
 help_us_text = '\nYou are our last chance! Quickly, choose one of these three eggs and raise it to level 100 before the village festival of light in 3 days\n\n\n The fate of our World rests in your hands...\n'
-choose_blob_text = f'\n{Back.MAGENTA}***** Three glistening eggs lay before you, each sublime in their own way *****{Back.RESET}\n\n{Fore.RED}A redish burning ember aura radiates from the left-most egg, it calls to those who have no fear in their hearts \n\n{Fore.BLUE}The middle egg, blue as a clear summer sky, vibrates with rythmic ripples, it calls those who can endure anything\n\n{Fore.GREEN}The right egg, green and littered with brownish-yellow vines and leaves, shimmers and releases a fragrant aroma, calling those who have no doubt within their heart.\n\n'  
+choose_blob_text = f'\n{Back.MAGENTA}***** Three glistening eggs lay before you, each sublime in their own way *****{Back.RESET}\n\n{Fore.RED}A redish burning ember aura radiates from the left-most egg, it calls to those who have no fear in their hearts \n\n{Fore.BLUE}The middle egg, blue as a clear summer sky, vibrates with rythmic ripples, it calls those who can endure anything\n\n{Fore.GREEN}The right egg, green and littered with brownish-yellow vines and leaves, shimmers and releases a fragrant aroma, calling those who have no doubt within their heart.\n\n'
 choose_blob_selection = f'\n1.{Fore.RED} Red Egg\n{Fore.RESET}2. {Fore.BLUE}Blue Egg{Fore.RESET}\n3. {Fore.GREEN}Green Egg{Back.RESET}\n\n'
 congrats_text = 'YAY! Your Blob reached level 100 before the town festial.\n !!!CONGRATULATIONS!!!'
 game_over_text = '\n Sorry but your blob lost all it\'s health.\nGAME OVER'
@@ -61,17 +75,28 @@ next(next_continue)
 print('----------------------------------------------------------------')
 
 print(choose_blob_selection)
-if input("") == one_variants:
-    print(pa.Fire_Blob ())
-elif input ("") == two_variants:
-    print(pa.Water_Blob ())
-elif input ("") == three_variants:
-    print(pa.Grass_Blob ())
+if input() == one_variants:
+    pa.Fire_Blob ()
+elif input () == two_variants:
+    pa.Water_Blob ()
+elif input () == three_variants:
+    pa.Grass_Blob ()
 
-# set player blob attribute
 
-# ask what activites would like to do
-print 
+
+# main game area and loop 
+days_past = 0
+
+while days_past < 3 or Blob.level < 0:
+    # ask what activites would like to do
+    print("would you like to do?")
+
+    days_past += 1
+     
+    if days_past > 3:
+
+
+
 # do the operation and - 1 of 3 from daily activites value
 
 # every 3 activites refresh blob hp and Game Over counter =-1 and ask question relating to blob
@@ -80,22 +105,19 @@ print
 # e.g if Gamer Over counter == 0 or hp == 0 print GAME OVER and return main_program
 
 
-#while  blob.hp != 0:
-    #if level == 100 you win
-   # if blob.level == 100:
-      #  print('congrats_text')
+while  blob.hp != 0:
+    if level == 100 you win
+    if blob.level == 100:
+        print('congrats_text')
 
-
-   
-
-   # else game_over_text
+else game_over_text
 
 
 
-# def WIN_GAME():
-#   Blob_level_100 = True
-#return Blob_level_100
-# print(WIN GAMW ()) 
+def WIN_GAME():
+    Blob_level_100 = True
+return Blob_level_100
+print(WIN GAME ()) 
 
 #Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 #Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.

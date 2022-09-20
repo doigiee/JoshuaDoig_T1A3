@@ -19,10 +19,3 @@ pikachu = Pokemon("Pikachu", 25, "Electric")
 print(pikachu.name)
 print(pikachu.pokedexNumber)
 print(pikachu.type)
-
-for blob in fire_blob:
-    print(name)
-
-#from PIL import Image
-#im = Image.open("THE_BLOB_GAME.png")
-#im.show()

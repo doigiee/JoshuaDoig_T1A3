@@ -1,29 +1,43 @@
-class level:
-    def __init__(self, XP):
-        self.XP = XP
-
 class days:
     def __init__(self, days_left):
         self.days_left = days_left
 
-class Character:
-    __available_species = ['Fire-blob', 'water_blob', 'grass_blob']
+class level:
 
-    def __init__(self, name, species, hp, level, atk):
+    def set_level(self, level):
+        self.level = level
+
+    def add_level(self, level):
+        self.level += level
+
+class Blob:
+    def __init__(self, name, species, hp, atk):
         self.name = name
         self.species = species
         self.hp = hp
-        self.level = level
         self.atk = atk
+        self.xp = level(0)
 
-print(blob.__str__())
-print(blob.__repr__())
+class enemy:
+    def __init__(self, level):
+        self.level = level
+        self.xp = level
 
-fire_blob = blob('calcifer', 'fire', 70, level = 1, atk = 50)
-water_blob = blob('Rimuru', 'water', 150, level = 1, atk = 50)
-grass_blob = blob('Gulpin', 'grass', 100, level = 10, atk = 50)
+    #transfer level of this loot to Blob
+    def defeat(self, level):
+        Blob.xp.add(self.level)
+        self.level = 0
 
+    
+
+#class Fire_blob(Blob):
+#    def __init__(self, name, species, hp=10, atk=20
+#    super().__init__(name, species, hp, atk)
+#    self.level = level
 
 #print(fire_blob.name)
 #print(water_blob.level)
 
+#@classmethod
+#(blob.__str__())
+#print(blob.__repr__())

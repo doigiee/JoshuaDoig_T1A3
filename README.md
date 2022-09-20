@@ -27,13 +27,26 @@ Following my flowchart, began making pseudocode on main.py, functions and import
 # Day 3 SATURDAY
 Not a great deal of work was done today, mainly went over some of the ed content I missed.
 
-# Day 4 
+# Day 4 SUNDAY
 worked from 5 - 3pm  today though was able to import an external module colorama and apply it to my ASCII art. I decided to make the title screen red, blue and green to match the colors of the blobs i have.
 
-# Day 5 
-# Day 6 
-# Day 7 
-# Day 8 
-# Day 9 
-# Day 10 
-# Day 11
+# Day 5 MONDAY
+added 1 more external imports from pypi. fixed a bit of code. 
+
+# Day 6 TEUSDAY
+
+
+# Day 7 WEDNESDAY
+
+
+# Day 8 THURSDAY
+
+
+# Day 9 FRIDAY
+
+
+# Day 10 SATURDAY
+
+
+# Day 11 SUNDAY
+
