@@ -24,11 +24,9 @@ def The_Blob_Game_Title ():
     print(f'{Fore.GREEN}                                ░░░░░░                  ░░░░░░                                    ') 
     print(f'{Fore.RED}                                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░                                    ') 
     print(f'{Fore.BLUE}                                    ░░░░░░░░░░░░░░░░░░░░░░                                        ') 
-    #print(Fore.RED + 'some red text')
-    #print(Back.CYAN + 'cyan text')
-    #print(Style.BRIGHT + 'BRIGHT')
-    
 
+
+#fire_blob
 def Fire_Blob ():
     print(f'{Fore.RED}           ░░              ░░                         ')
     print(f'{Fore.RED}       ░░                  ░░                         ')
@@ -52,8 +50,8 @@ def Fire_Blob ():
     print(f'{Fore.RED}              ░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░                ')
     print(f'{Fore.RED}                    ░░░░░░░░░░░░                      ')
 
+#water_blob
 def Water_Blob ():
-    #water_blob
     print(f'{Fore.BLUE}                           ▒                       ')
     print(f'{Fore.BLUE}                          ▒▒▒                      ')
     print(f'{Fore.BLUE}                        ▒▒▒▒▒▒                     ')

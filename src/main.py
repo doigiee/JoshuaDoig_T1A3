@@ -1,4 +1,3 @@
-
 import clearing
 clearing.clear()
 import pixel_art as pa
@@ -9,25 +8,16 @@ from xml.dom import InvalidCharacterErr
 #import functions
 import classes
 
-calcifer = classes.Blob('calcifer', 'fire', 70, atk = 50)
-calcifer.set_level = (10)
-rimuru = classes.Blob('rimuru', 'water', 150, atk = 50)
-gulpin = classes.Blob('gulpin', 'grass', 100, atk = 50)
-enemy = classes.enemy(level = 10)
-
-print(enemy.__dict__)
-print(calcifer.__dict__)
-enemy.defeat(calcifer)
-
-print(rimuru.__dict__)
-print(gulpin.__dict__)
-
 #input potientials
 yes_variants = ("Y", "y", "Yes", "YES", "yes")
 no_variants = ("N", "n", "No", "NO", "no")
-one_variants = ("One", "one", "1")
-two_variants = ("Two", "two", "2")
-three_variants = ("Three", "three", "3")
+
+def Wrong_number():
+    val = int(input('Enter an integer: '))
+    if not val in range(1, 3):
+        raise NameError(f'{val} is out of range - must be between 1 and 10')
+
+    return val
 
 #letting user set the pace
 def next(prompt):
@@ -40,8 +30,6 @@ def next(prompt):
         elif answer not in (no_variants):
             InvalidCharacterErr 
             print("InvalidCharacterErr- Please enter either: 'yes', 'no', 'y', 'n'")
-
-
 
 #text for Story game
 introduction_text = '\nWelcome to Blobville!\nThe Village needs your help! Evil blobs have invaded the area.\nWe need a pure heart to bring balance back to our World!\n'
@@ -75,29 +63,36 @@ next(next_continue)
 print('----------------------------------------------------------------')
 
 print(choose_blob_selection)
-if input() == one_variants:
-    pa.Fire_Blob ()
-elif input () == two_variants:
-    pa.Water_Blob ()
-elif input () == three_variants:
-    pa.Grass_Blob ()
 
+descision = input("make your choice 1, 2 or 3: ")
 
+def make_a_choice():
+    if descision == 1:
+        pa.Fire_Blob ()
+    elif descision == 2:
+        print(pa.Water_Blob ())
+    elif descision == int(3):
+        print(pa.Grass_Blob ())
+    else: Wrong_number()
+    return
+make_a_choice()
+
+print("hello")
 
 # main game area and loop 
-days_past = 0
+#days_left = 0
 
-while days_past < 3 or Blob.level < 0:
-    # ask what activites would like to do
-    print("would you like to do?")
+#while days_left < 3 or classes.Blob.xp < 0:
+    ### ask what activites would like to do
+ #   print("would you like to do?")
 
-    days_past += 1
+ #   days_left += 1
      
-    if days_past > 3:
+  #  if days_left > 3:
+  #      pass
 
 
 
-# do the operation and - 1 of 3 from daily activites value
 
 # every 3 activites refresh blob hp and Game Over counter =-1 and ask question relating to blob
 
@@ -105,23 +100,9 @@ while days_past < 3 or Blob.level < 0:
 # e.g if Gamer Over counter == 0 or hp == 0 print GAME OVER and return main_program
 
 
-while  blob.hp != 0:
-    if level == 100 you win
-    if blob.level == 100:
-        print('congrats_text')
-
-else game_over_text
-
-
-
-def WIN_GAME():
-    Blob_level_100 = True
-return Blob_level_100
-print(WIN GAME ()) 
 
 #Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 #Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
 #Style: DIM, NORMAL, BRIGHT, RESET_ALL
 
 ######main_program()
-

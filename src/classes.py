@@ -11,12 +11,12 @@ class level:
         self.level += level
 
 class Blob:
-    def __init__(self, name, species, hp, atk):
+    def __init__(self, name, species, hp, atk, level):
         self.name = name
         self.species = species
         self.hp = hp
         self.atk = atk
-        self.xp = level(0)
+        self.level = level
 
 class enemy:
     def __init__(self, level):
@@ -25,7 +25,7 @@ class enemy:
 
     #transfer level of this loot to Blob
     def defeat(self, level):
-        Blob.xp.add(self.level)
+        #Blob.xp.add(self.level)
         self.level = 0
 
     
