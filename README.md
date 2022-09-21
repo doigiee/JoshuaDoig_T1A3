@@ -16,7 +16,7 @@ The main Point of the game is for the player to enjoy the challenge of raising t
 This game allows users to do activities with their virtual pet blob such as : walk together, cook together, play together, rest together and battle other slime all in an attempt to gain levels before the due date of the town festival of light.
 
 # tests
-had pytest installed and used it freqently to test what parts of my code were working and not working properly.
+had pytest installed and used it to test my code.
 
 
 # Day 1 THURSDAY
