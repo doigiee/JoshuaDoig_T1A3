@@ -1,6 +1,5 @@
 import colorama
 import clearing
-import menu
 import pixel_art as pa
 from colorama import Fore, Back
 colorama.init(autoreset=True)
@@ -140,7 +139,6 @@ def main_program():
             clearing.clear()
             print(game_over_text)
             break
-
 
 
 

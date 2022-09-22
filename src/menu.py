@@ -1,5 +1,5 @@
 from simple_term_menu import TerminalMenu
-
+import main
 main_menu = ["[p] Play Game", "[i] Instructions", "[q] Quit"]
 sub_menu = ["[r] return to main menu"]
 
@@ -9,7 +9,7 @@ while loop:
     descision_for_menu = main_menu[TerminalMenu(main_menu, title = "Main menu", menu_cursor_style = ("fg_red", "bold"), menu_highlight_style = ("fg_black", "bg_red"), menu_cursor = "->").show()]
 
     if descision_for_menu == "[p] Play Game":
-        break
+        main.main_program()
 
     elif descision_for_menu == "[i] Instructions":
         sub_loop = True
@@ -23,4 +23,4 @@ while loop:
     elif descision_for_menu == "[q] Quit":
         loop = False
 
-    
+        
