@@ -16,9 +16,9 @@ three_variants = ("3", "three", "Three")
 
 #error handling for wrong number inputs
 def Wrong_number():
-    val = int(input('Enter an integer: '))
+    val = (input("Enter an number either '1', '2', or '3': "))
     if not val in range(1, 3):
-        raise NameError(f'{val} is out of range - must be between 1 and 10')
+        raise NameError(f'{val} is out of range - must be between 1 and 3')
 
     return val
 
@@ -75,7 +75,7 @@ def main_program():
 
     print(choose_blob_selection)
 
-    descision = input("make your choice 1, 2 or 3: ")
+    descision = input("make your choice, type '1', '2' or '3': ")
 
     def make_a_choice():
         if descision == "1":
@@ -89,7 +89,7 @@ def main_program():
 
     make_a_choice()
     if descision == "1":
-        blob_thingy = Blob('\ncalcifer', 'fire', 70, atk = 5, level = 0)
+        blob_thingy = Blob('calcifer', 'fire', 70, atk = 50, level = 0)
     elif descision == "2":
         blob_thingy = Blob('\nrimuru', 'water', 150, atk = 50, level = 0)
     elif descision == "3":
