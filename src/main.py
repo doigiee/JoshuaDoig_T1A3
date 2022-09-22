@@ -1,16 +1,12 @@
 import colorama
-import simple_term_menu
+import clearing
+import menu
 import pixel_art as pa
 from colorama import Fore, Back
-
-# from storage import fire_blob
-
-import clearing
-clearing.clear()
 colorama.init(autoreset=True)
 from xml.dom import InvalidCharacterErr
 #import functions
-from classes import Blob # Just importing one for now to test
+from classes import Blob
 
 #input potientials
 yes_variants = ("Y", "y", "Yes", "YES", "yes")
@@ -19,6 +15,7 @@ one_variants = ("1", "one", "One")
 two_variants = ("2", "two", "Two")
 three_variants = ("3", "three", "Three")
 
+#error handling for wrong number inputs
 def Wrong_number():
     val = int(input('Enter an integer: '))
     if not val in range(1, 3):
@@ -51,84 +48,100 @@ next_continue = '\nContinue?'
 what_activity = "\n What activity would you like to do next? \n1. walk\n2. eat\n3. play \n\nif wanting to walk type 'walk', or 'play', or 'eat'\n"
 ######def main_program():
 
-#game title
-pa.The_Blob_Game_Title ()
+#main menu import
 
-#indroductiory text, choose blob text, continue prompt
-next(next_continue)
-print('----------------------------------------------------------------')
-clearing.clear()
 
-print(introduction_text)
-print(help_us_text)
-#continue prompt
-next(next_continue)
-print('----------------------------------------------------------------')
-clearing.clear()
+#main program
+def main_program():
+    #game title
+    pa.The_Blob_Game_Title ()
 
-print(choose_blob_text)
-#continue prompt
-next(next_continue)
-print('----------------------------------------------------------------')
-clearing.clear()
+    #indroductiory text, choose blob text, continue prompt
+    next(next_continue)
+    print('----------------------------------------------------------------')
+    clearing.clear()
 
-print(choose_blob_selection)
+    print(introduction_text)
+    print(help_us_text)
+    #continue prompt
+    next(next_continue)
+    print('----------------------------------------------------------------')
+    clearing.clear()
 
-descision = input("make your choice 1, 2 or 3: ")
+    print(choose_blob_text)
+    #continue prompt
+    next(next_continue)
+    print('----------------------------------------------------------------')
+    clearing.clear()
 
-def make_a_choice():
+    print(choose_blob_selection)
+
+    descision = input("make your choice 1, 2 or 3: ")
+
+    def make_a_choice():
+        if descision == "1":
+            pa.Fire_Blob()
+        elif descision == "2":
+            print(pa.Water_Blob ())
+        elif descision == "3":
+            print(pa.Grass_Blob ())
+        else: Wrong_number()
+        return
+
+    make_a_choice()
     if descision == "1":
-        pa.Fire_Blob()
+        blob_thingy = Blob('\ncalcifer', 'fire', 70, atk = 5, level = 0)
     elif descision == "2":
-        print(pa.Water_Blob ())
+        blob_thingy = Blob('\nrimuru', 'water', 150, atk = 50, level = 0)
     elif descision == "3":
-        print(pa.Grass_Blob ())
-    else: Wrong_number()
-    return
+        blob_thingy = Blob('\ngulpin', 'grass', 100, atk = 50, level = 0)
 
-make_a_choice()
-if descision == "1":
-    blob_thingy = Blob('calcifer', 'fire', 70, atk = 5, level = 0)
-elif descision == "2":
-    blob_thingy = Blob('rimuru', 'water', 150, atk = 50, level = 0)
-elif descision == "3":
-    blob_thingy = Blob('gulpin', 'grass', 100, atk = 50, level = 0)
+    print(blob_thingy.__dict__)
 
-print(blob_thingy.__dict__)
-days_left = 3
-days = 0
-# level= 1
 
-while days < 3 or blob_thingy.level < 100:
-    if days_left < 1 and blob_thingy.level < 100:
-        clearing.clear()
-        print(game_over_text)
-        break
+    #main game loop.
+    days_left = 3
+    days = 0
+    # level= 1
 
-    print (f'you have {days_left} days until the town festival and have used {days} day(s) with you blob and your blob\'s level is {blob_thingy.level}')
-    # offer activity
-    print(what_activity)
-    choice = input()
-    if choice == "walk":
-        clearing.clear()
-        blob_thingy.level += 35
-        days += 1
-        days_left -= 1
-        print(f'your blob went up 35 levels congrats your new level is {blob_thingy.level} you have {days_left} days left')
-    elif choice == "eat":
-        clearing.clear()
-        blob_thingy.level += 25
-        days += 1
-        days_left -= 1
-        print(f'your blob went up 25 levels congrats your new level is {blob_thingy.level} you have {days_left} days left')
-    elif choice == "play":
-        clearing.clear()
-        blob_thingy.level += 40
-        days += 1
-        days_left -= 1
-        print(f'you and your blob had a great afternoon together playing ,your blob went up 35 levels congrats your new level is {blob_thingy.level} you have days {days_left}')
-    else:
-        print("Please choose a proper activiy")
+
+    while days < 3 : #or blob_thingy.level < 100#:
+
+        print (f'you have {days_left} days until the town festival and have used {days} day(s) with you blob and your blob\'s level is {blob_thingy.level}')
+        # offer activity and add to level. 
+        print(what_activity)
+        choice = input()
+        if choice == "walk":
+            clearing.clear()
+            blob_thingy.level += 40
+            days += 1
+            days_left -= 1
+            print(f'your blob went up 35 levels congrats your new level is {blob_thingy.level} you have {days_left} days left')
+        elif choice == "eat":
+            clearing.clear()
+            blob_thingy.level += 20
+            days += 1
+            days_left -= 1
+            print(f'your blob went up 25 levels congrats your new level is {blob_thingy.level} you have {days_left} days left')
+        elif choice == "play":
+            clearing.clear()
+            blob_thingy.level += 101
+            days += 1
+            days_left -= 1
+            print(f'you and your blob had a great afternoon together playing , your blob went up 35 levels congrats your new level is {blob_thingy.level} you have days {days_left}')
+        else:
+            print("Please make a correct choice for an activiy")
+        
+        if days_left > 1 and blob_thingy.level >= 100:
+            clearing.clear()
+            print(congrats_text)
+            break
+        if days_left < 1 and blob_thingy.level < 100:
+            clearing.clear()
+            print(game_over_text)
+            break
+
+
 
 
 # every 3 activites refresh blob hp and Game Over counter =-1 and ask question relating to blob

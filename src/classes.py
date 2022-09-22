@@ -1,6 +1,6 @@
 class days:
-    def __init__(self, days_left):
-        self.days_left = days_left
+    def __init__(self, days):
+        self.days = days
 
 class level:
     def set_level(self, level):
@@ -18,9 +18,7 @@ class Blob:
         self.level = level
 
 
-# class fire_blob(Blob):
-#     def __init__(self):
-#         def super():
+#not used currently
 class enemy:
     def __init__(self, level):
         self.level = level
@@ -31,8 +29,8 @@ class enemy:
         #Blob.xp.add(self.level)
         self.level = 0
 
-    
 
+#was initially intending there to be three blob classes though for now 1 is fine
 #class Fire_blob(Blob):
 #    def __init__(self, name, species, hp=10, atk=20
 #    super().__init__(name, species, hp, atk)

@@ -34,13 +34,13 @@ worked from 5 - 3pm  today though was able to import an external module colorama
 added 1 more external imports from pypi. fixed a bit of code. 
 
 # Day 6 TEUSDAY
-
+Re evaluated code
 
 # Day 7 WEDNESDAY
-
+re evaluated code
 
 # Day 8 THURSDAY
-
+Basically finished a fleshed out working porgram still some debugging to do will be updating flowchart a little bit as im rethinking it and will add more classes imports to main if possible. youtube and powerpoint will need to be made in next couple of days as im working on sunday.
 
 # Day 9 FRIDAY
 
