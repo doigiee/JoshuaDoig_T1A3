@@ -3,7 +3,6 @@ class days:
         self.days_left = days_left
 
 class level:
-
     def set_level(self, level):
         self.level = level
 
@@ -18,6 +17,10 @@ class Blob:
         self.atk = atk
         self.level = level
 
+
+# class fire_blob(Blob):
+#     def __init__(self):
+#         def super():
 class enemy:
     def __init__(self, level):
         self.level = level
