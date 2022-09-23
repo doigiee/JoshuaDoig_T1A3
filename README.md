@@ -23,14 +23,17 @@ This game allows users to do activities with their virtual pet blob such as : wa
    git clone https://github.com/doigiee/JoshuaDoig_T1A3
    ```
 # tests
-had pytest installed and used it to test my code. 
+had pytest installed and used it to test my code.
+pytest was very helpful when i had a menu import which wasn't working correctly (with infinite looping which I was unaware of). 
+through this pytest I moved menu.py over to my main, and deleted the empty menu.py. It would have been ideal to keep it seperate though It's all working now.
 
+manual testing
 | Feture  |      Expected outcome     | Actual outcome |
 |----------|:-------------:|------:|
 | run through correctly |  to run through| as expected |
-| test for blob 1 |    print blob 1   |   as expected |
-| test for blob 2 |    print blob 2   |   as expected |
-| test for blob 3 |    print blob 3   |   as expected |
+| test for blob 1 while loop |    print blob 1   |   as expected |
+| test for blob 2 while loop |    print blob 2   |   as expected |
+| test for blob 3 while loop |    print blob 3   |   as expected |
 | repeat continue option |    repeats until y   |   as expected |
 | menu display | displays |   as expected |
 | return to main menu upon completion or loss | returns |   as expected |
@@ -67,6 +70,7 @@ Basically finished a fleshed out working porgram still some debugging to do will
 
 # Day 9 FRIDAY
 Shuffling things around and trying to fix last bugs and get a 100% working simple program so that tommorow can be soley for recording youtube and powerpoint and submitting file as Sunday I have work.
+Finally was able to fix the last 2 buys that I had. stored all unused class and errorvalues messages in the unused.py file. now need to make a powerpoint and figure out the rest of it. Game is very simple in design, though I accomplished basically everything i set out to do.
 
 
 # Day 10 SATURDAY
