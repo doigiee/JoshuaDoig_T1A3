@@ -13,25 +13,13 @@ help_us_text = '\nYou are our last chance! Quickly, choose one of these three eg
 choose_blob_text = f'\n{Back.MAGENTA}***** Three glistening eggs lay before you, each sublime in their own way *****{Back.RESET}\n\n{Fore.RED}A redish burning ember aura radiates from the left-most egg, it calls to those who have no fear in their hearts \n\n{Fore.BLUE}The middle egg, blue as a clear summer sky, vibrates with rythmic ripples, it calls those who can endure anything\n\n{Fore.GREEN}The right egg, green and littered with brownish-yellow vines and leaves, shimmers and releases a fragrant aroma, calling those who have no doubt within their heart.\n\n'
 choose_blob_selection = f'\n1.{Fore.RED} Red Egg\n{Fore.RESET}2. {Fore.BLUE}Blue Egg{Fore.RESET}\n3. {Fore.GREEN}Green Egg{Back.RESET}\n\n'
 congrats_text = 'YAY! Together with your Blob you were able to reach level 100 before the town festial and save the world from the evil blobs.\n !!!CONGRATULATIONS!!!'
-game_over_text = '\n Sorry but your blob didn\'t reach level 100 in 3 days.\nGAME OVER'
+game_over_text = '\nSorry but your blob didn\'t reach level 100 in 3 days.\nGAME OVER'
 #reused continue segway
 next_continue = '\nContinue?'
 what_activity = "\n What activity would you like to do next? \n1. fight\n2. eat\n3. play \n\nif wanting to walk type 'fight', or 'eat', or 'play'\n"
 #input potientials
 yes_variants = ("Y", "y", "Yes", "YES", "yes")
 no_variants = ("N", "n", "No", "NO", "no")
-# one_variants = ("1", "one", "One")
-# two_variants = ("2", "two", "Two")
-# three_variants = ("3", "three", "Three")
-class RangeError(Exception):
-    pass
-#error handling for wrong number inputs
-def get_int():
-    val = int(input('Enter an integer: '))
-    if val not in range(1, 3):
-        raise RangeError(f'{val} is out of range - must be between 1 and 10')
-
-    return val
 
 #letting user set the pace
 def next(prompt):
@@ -69,21 +57,6 @@ def main_program():
 
     print(choose_blob_selection)
 
-    # descision = input("make your choice, type '1', '2' or '3': ")
-    # # clearing.clear()
-    # def make_a_choice():
-    #     if descision == "1":
-    #         pa.Fire_Blob()
-    #     elif descision == "2":
-    #         pa.Water_Blob ()
-    #     elif descision == "3":
-    #         pa.Grass_Blob ()
-    #     # elif descision != ("1" "2" "3"):
-    #     #     descision = input("try again '1', '2' or '3': ")
-    #     #     make_a_choice()
-    #     # else: get_int()
-    # make_a_choice()
-
     while True:
         descision = input("make your choice, type '1', '2' or '3': ")
         if descision == "1":
@@ -96,7 +69,7 @@ def main_program():
             pa.Grass_Blob ()
             break
         else:
-            print("Invalid Character - Please enter either: '1', '2', '3'")
+            print("\nInvalid Character - Please enter either: '1', '2', '3'")
 
     print("As you touch the egg a warm glow explodes from within, What is this?...")
 
@@ -154,6 +127,9 @@ def main_program():
             clearing.clear()
             print(congrats_text)
             break
+    next(next_continue)
+    print('----------------------------------------------------------------')
+    clearing.clear()
 
 #main menu - wasn't working from importing from another .py file but was working when placed here
 def menu_log ():
@@ -179,4 +155,5 @@ def menu_log ():
 
         elif descision_for_menu == "[q] Quit":
             loop = False
+
 menu_log()
