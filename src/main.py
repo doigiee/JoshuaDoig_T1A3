@@ -27,11 +27,11 @@ class RangeError(Exception):
     pass
 #error handling for wrong number inputs
 def get_int():
-    descision = int(input('Enter an integer: '))
-    if descision not in range(1, 3):
-        raise RangeError(f'{descision} is out of range - must be between 1 and 10')
+    val = int(input('Enter an integer: '))
+    if val not in range(1, 3):
+        raise RangeError(f'{val} is out of range - must be between 1 and 10')
 
-    return descision
+    return val
 
 #letting user set the pace
 def next(prompt):
@@ -69,21 +69,35 @@ def main_program():
 
     print(choose_blob_selection)
 
-    descision = input("make your choice, type '1', '2' or '3': ")
-    clearing.clear()
-    def make_a_choice():
+    # descision = input("make your choice, type '1', '2' or '3': ")
+    # # clearing.clear()
+    # def make_a_choice():
+    #     if descision == "1":
+    #         pa.Fire_Blob()
+    #     elif descision == "2":
+    #         pa.Water_Blob ()
+    #     elif descision == "3":
+    #         pa.Grass_Blob ()
+    #     # elif descision != ("1" "2" "3"):
+    #     #     descision = input("try again '1', '2' or '3': ")
+    #     #     make_a_choice()
+    #     # else: get_int()
+    # make_a_choice()
+
+    while True:
+        descision = input("make your choice, type '1', '2' or '3': ")
         if descision == "1":
             pa.Fire_Blob()
-        elif descision == "2":
+            break
+        if descision == "2":
             pa.Water_Blob ()
-        elif descision == "3":
+            break
+        if descision == "3":
             pa.Grass_Blob ()
-        elif descision != ("1" "2" "3"):
-            descision = input("try again '1', '2' or '3': ")
-            make_a_choice()
-        # else: get_int()
-    make_a_choice()
-    
+            break
+        else:
+            print("Invalid Character - Please enter either: '1', '2', '3'")
+
     print("As you touch the egg a warm glow explodes from within, What is this?...")
 
     if descision == "1":
