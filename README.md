@@ -15,8 +15,31 @@ The main Point of the game is for the player to enjoy the challenge of raising t
 # Features
 This game allows users to do activities with their virtual pet blob such as : walk together, cook together, play together, rest together and battle other slime all in an attempt to gain levels before the due date of the town festival of light.
 
+
+# Installation Instructions
+ 1. if you do not have vs code installed on your computer then I'd reccomend downloading it [here](https://code.visualstudio.com/download) and following the instructions to install it.
+ 2. then i'd ask you to open your clone this repository to your d
+   ```py
+   git clone https://github.com/doigiee/JoshuaDoig_T1A3
+   ```
 # tests
-had pytest installed and used it to test my code.
+had pytest installed and used it to test my code. 
+
+| Feture  |      Expected outcome     | Actual outcome |
+|----------|:-------------:|------:|
+| run through correctly |  to run through| as expected |
+| test for blob 1 |    print blob 1   |   as expected |
+| test for blob 2 |    print blob 2   |   as expected |
+| test for blob 3 |    print blob 3   |   as expected |
+| repeat continue option |    repeats until y   |   as expected |
+| menu display | displays |   as expected |
+| return to main menu upon completion or loss | returns |   as expected |
+|  |  |   as expected |
+|  |  |   as expected |
+|  |  |   as expected |
+
+
+
 
 
 # Day 1 THURSDAY
@@ -43,6 +66,7 @@ re evaluated code
 Basically finished a fleshed out working porgram still some debugging to do will be updating flowchart a little bit as im rethinking it and will add more classes imports to main if possible. youtube and powerpoint will need to be made in next couple of days as im working on sunday.
 
 # Day 9 FRIDAY
+Shuffling things around and trying to fix last bugs and get a 100% working simple program so that tommorow can be soley for recording youtube and powerpoint and submitting file as Sunday I have work.
 
 
 # Day 10 SATURDAY
