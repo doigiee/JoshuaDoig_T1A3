@@ -31,11 +31,36 @@ My terminal app has the features of: having a main menu with instructions and qu
 tried my best to follow the styling guide of PEP*- Style Guide of Python Code
 
 # Installation Instructions
- 1. if you do not have Python installed on your computer then I'd reccomend downloading it [here](https://code.visualstudio.com/download) and following the instructions to install it.
- 2. then i'd ask you to open your clone this repository to your d
-   ```py
-   git clone https://github.com/doigiee/JoshuaDoig_T1A3
-   ```
+1. If you do not have Python installed on your computer, please install python [here](https://www.python.org/downloads/).
+
+2. Now install pip onto your computer if you dont already have it installed also, [here](https://www.python.org/downloads/)
+
+3. Clone my repository by inputting this comand when in the desired location of your terminal/Ubuntu
+
+```
+git clone https://github.com/Erkan-Kaban/TerminalApp.git
+```
+
+4. now change into the file location of the cloned repository, looking for the src folder using,
+
+```
+cd src
+```
+
+now you'll be able to run the blob game by executing the shell and entering the command
+
+```
+./The_Blob_Game.sh
+```
+
+You should be good to go. If the terminal prompts you to install any further dependancies, of course, press 'y' followed by 'enter key'.
+
+Although If the game still doesn't run you can try running the following command in the terminal while in the cloned repository:
+
+```
+python3 src/main.py
+```
+
 # tests
 had pytest installed and used it to test my code.
 pytest was helpful when I had a menu import which wasn't working correctly (with infinite looping which I was unaware of). 
