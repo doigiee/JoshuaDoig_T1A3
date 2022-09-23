@@ -31,7 +31,7 @@ My terminal app has the features of: having a main menu with instructions and qu
 tried my best to follow the styling guide of PEP*- Style Guide of Python Code
 
 # Installation Instructions
- 1. if you do not have vs code installed on your computer then I'd reccomend downloading it [here](https://code.visualstudio.com/download) and following the instructions to install it.
+ 1. if you do not have Python installed on your computer then I'd reccomend downloading it [here](https://code.visualstudio.com/download) and following the instructions to install it.
  2. then i'd ask you to open your clone this repository to your d
    ```py
    git clone https://github.com/doigiee/JoshuaDoig_T1A3
@@ -49,11 +49,10 @@ manual testing
 | test for blob 2 while loop |    print blob 2   |   as expected |
 | test for blob 3 while loop |    print blob 3   |   as expected |
 | repeat continue option |    repeats until y   |   as expected |
-| menu display and options | displays can cycle through. etc |   as expected |
+| menu display and options | displays can cycle through with printouts + quit|   as expected |
 | return to main menu upon completion or loss | returns |   as expected |
 | levels adding | adds depending on the activity |   as expected |
 | wrong activity | stays in loops and allows another chance to type |   as expected |
-
 
 
 # Day 1 THURSDAY
