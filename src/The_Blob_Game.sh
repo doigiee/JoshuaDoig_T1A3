@@ -18,4 +18,4 @@ pip install -r requirements.txt
 
 echo "All python packages are now installed, running main application"
 
-python3 main.py
+python3 src/main.py

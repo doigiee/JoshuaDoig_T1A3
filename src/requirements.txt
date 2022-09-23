@@ -1,3 +1,6 @@
+colorama==0.4.5
+clearing==1.0.0
+TerminalMenu==1.5.1
 argcomplete==2.0.0
 brotli==1.0.9
 brotlicffi==1.0.9.2

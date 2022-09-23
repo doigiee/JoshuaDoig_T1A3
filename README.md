@@ -41,13 +41,13 @@ tried my best to follow the styling guide of PEP*- Style Guide of Python Code
 git clone https://github.com/Erkan-Kaban/TerminalApp.git
 ```
 
-4. now change into the file location of the cloned repository, looking for the src folder using,
+4. Now change into the file location of the cloned repository, looking for the src folder using,
 
 ```
 cd src
 ```
 
-now you'll be able to run the blob game by executing the shell and entering the command
+5. Now you'll be able to run the blob game by executing the shell and entering the command
 
 ```
 ./The_Blob_Game.sh
