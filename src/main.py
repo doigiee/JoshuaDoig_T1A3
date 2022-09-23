@@ -35,6 +35,7 @@ def next(prompt):
 
 def main_program():
     #game title
+    clearing.clear()
     pa.The_Blob_Game_Title ()
 
     #indroductiory text, choose blob text, continue prompt
@@ -133,6 +134,7 @@ def main_program():
 
 #main menu - wasn't working from importing from another .py file but was working when placed here
 def menu_log ():
+    clearing.clear()
     main_menu = ["[p] Play Game", "[i] Instructions", "[q] Quit"]
     sub_menu = ["[r] return to main menu"]
 

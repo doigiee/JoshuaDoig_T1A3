@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.1.3, pluggy-1.0.0
+rootdir: /home/doigiee/term1/assessments/JoshuaDoig_T1A3
+collected 0 items / 2 errors
+
+==================================== ERRORS ====================================
+______________________ ERROR collecting src/test_main.py _______________________
+src/test_main.py:3: in <module>
+    descision = input("make your choice, type '1', '2' or '3': ")
+.venv/lib/python3.8/site-packages/_pytest/capture.py:192: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+------------------------------- Captured stdout --------------------------------
+make your choice, type '1', '2' or '3': 
+______________________ ERROR collecting src/test_more.py _______________________
+src/test_more.py:2: in <module>
+    next(next_continue)
+E   TypeError: 'str' object is not an iterator
+=========================== short test summary info ============================
+ERROR src/test_main.py - OSError: pytest: reading from stdin while output is ...
+ERROR src/test_more.py - TypeError: 'str' object is not an iterator
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.07s ===============================
