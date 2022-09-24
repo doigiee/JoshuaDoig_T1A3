@@ -25,7 +25,7 @@ no_variants = ("N", "n", "No", "NO", "no")
 def next(prompt):
     answer = ""
     while True:
-        answer = input(f"{prompt}\n'yes' or 'no':")
+        answer = input(f"{prompt}\n'yes' or 'no': ")
         print("")
         if answer in (yes_variants):
             return True

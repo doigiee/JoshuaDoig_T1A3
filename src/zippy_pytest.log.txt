@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.1.3, pluggy-1.0.0
+rootdir: /home/doigiee/term1/assessments/JoshuaDoig_T1A3
+collected 4 items
+
+src/pytests/test_fail.py F.F                                             [ 75%]
+src/pytests/test_me.py .                                                 [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_comparewithfire _____________________________
+
+Blob = [25, 35, 45]
+
+    def test_comparewithfire(Blob):
+    	mylevel=35
+>   	assert Blob[0]==mylevel,"fire and mylevel comparison failed"
+E    AssertionError: fire and mylevel comparison failed
+E    assert 25 == 35
+
+src/pytests/test_fail.py:11: AssertionError
+____________________________ test_comparewithgrass _____________________________
+
+Blob = [25, 35, 45]
+
+    def test_comparewithgrass(Blob):
+    	mylevel=35
+>   	assert Blob[2]==mylevel,"grass and mylevel comparison failed"
+E    AssertionError: grass and mylevel comparison failed
+E    assert 45 == 35
+
+src/pytests/test_fail.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED src/pytests/test_fail.py::test_comparewithfire - AssertionError: fire ...
+FAILED src/pytests/test_fail.py::test_comparewithgrass - AssertionError: gras...
+========================= 2 failed, 2 passed in 0.04s ==========================
