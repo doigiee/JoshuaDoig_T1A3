@@ -72,7 +72,7 @@ had pytest installed and used it to test my code.
 pytest was helpful when I had a menu import which wasn't working correctly (with infinite looping which I was unaware of). 
 through this pytest I moved menu.py over to my main, and deleted menu.py. It would have been ideal to keep it seperate though It's all working now.
 
-manual testing
+### manual testing
 | Feture  |      Expected outcome     | Actual outcome |
 |----------|:-------------:|------:|
 | run through correctly |  to run through| as expected |
@@ -85,6 +85,9 @@ manual testing
 | levels adding | adds depending on the activity |   as expected |
 | wrong activity | stays in loops and allows another chance to type |   as expected |
 
+### Pytest
+pytest was also used throught development to test features
+![Pytest screenshot](docs/Pytest_Screenshots/pytestmain.png)
 
 ### Day 1 THURSDAY
 Brainstormed ideas, submitted this one, got it appoved, created file on linux wsl linked to VScode, setup a virtual environment (venv.), git init,  git add . , git commit -m 'Inital Commit', and git push to my github repository as JoshuaDoig_T1A3. Then finished my flowchart and setup a Trello to track progress.

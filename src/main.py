@@ -17,7 +17,6 @@ game_over_text = '\nSorry but your blob didn\'t reach level 100 in 3 days.\nGAME
 #reused continue segway
 next_continue = '\nContinue?'
 what_activity = "\n What activity would you like to do next? \n1. fight\n2. eat\n3. play \n\nif wanting to walk type 'fight', or 'eat', or 'play'\n"
-#input potientials
 
 
 def main_program():
