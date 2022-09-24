@@ -89,10 +89,16 @@ through this pytest I moved menu.py over to my main, and deleted menu.py. It wou
 pytest was also used throught development to test features
 ![Pytest screenshot](docs/Pytest_Screenshots/pytestmain.png)
 
+## Daily log
+A basic outline of what was accomplished on a given day.
+
 ### Day 1 THURSDAY
 Brainstormed ideas, submitted this one, got it appoved, created file on linux wsl linked to VScode, setup a virtual environment (venv.), git init,  git add . , git commit -m 'Inital Commit', and git push to my github repository as JoshuaDoig_T1A3. Then finished my flowchart and setup a Trello to track progress.
+![15/9](docs/Trello/15-9.png)
+
 ### Day 2 FRIDAY
 Following my flowchart, began making pseudocode on main.py, functions and imports can be added and sorted out later. Basically creating bare bones and skeleton as '#' comments so that all will be left to do is figure out the code. (Had house inspection today so was busy for 2/3 of the day).
+![20/9](docs/Trello/15-9.png)
 
 ### Day 3 SATURDAY
 Not a great deal of work was done today, mainly went over some of the ed content I missed.
@@ -111,6 +117,7 @@ re evaluated code
 
 ### Day 8 THURSDAY
 Basically finished a fleshed out working porgram still some debugging to do will be updating flowchart a little bit as im rethinking it and will add more classes imports to main if possible. youtube and powerpoint will need to be made in next couple of days as im working on sunday.
+![23/9](docs/Trello/23-9 3.png)
 
 ### Day 9 FRIDAY
 Shuffling things around and trying to fix last bugs and get a 100% working simple program so that tommorow can be soley for recording youtube and powerpoint and submitting file as Sunday I have work.
@@ -122,8 +129,12 @@ Starting making powerpoint with
 
 
 ### Day 10 SATURDAY
+Presentation and tidying, learning more about final features how to do a couple of things.
 
 
 ### Day 11 SUNDAY
-Submition day
+Submittion day
+
+# Author
+Joshua Doig
 
