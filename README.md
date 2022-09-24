@@ -1,20 +1,20 @@
 # Welcome to 'The Blob Game' README Markdown 
 # JoshuaDoig_T1A3
 
-## [Youtube recording](https://www.youtube.com/watch?v=3159Tvb9l50)
+### [Youtube recording](https://www.youtube.com/watch?v=3159Tvb9l50)
 
 #### Internet Sites Used:
 #### [Blob Title Image](https://textart.sh/topic/slime)
 #### [Blob Title Text](https://fsymbols.com)
 #### [Flowchart: https](//app.diagrams.net/?libs=general;flowchart&src=about)
-#### [Trello](https://trello.com/b/74KvlyR2/joshuadoigt1a3) Workspace Manager)
+#### [Trello Workspace Manager](https://trello.com/b/74KvlyR2/joshuadoigt1a3) )
 #### [Colorama 0.4.5](https://pypi.org/project/colorama/)
 #### [Clearing 1.0.0](https://pypi.org/project/clearing/)
 #### [simple-term-menu 1.5.1](https://pypi.org/project/simple-term-menu/)
 #### [Grepper chrome extension](https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco?hl=en)
 #### [W3Schools](https://www.w3schools.com/)
 #### [Canva](https://www.canva.com/design/DAFNDKfOn1w/iOyEdffqzjnkzfl5uGaSFQ/edit)
-#### [OBS 28.0.2](https://obsproject.com/) recording
+#### [OBS 28.0.2 recording](https://obsproject.com/) 
 
 
 # Statement and Purpose
@@ -140,4 +140,3 @@ Submittion day. have work today so submitted yesterday.
 
 # Author
 Joshua Doig
-
