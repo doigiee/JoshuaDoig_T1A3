@@ -20,8 +20,6 @@ what_activity = "\n What activity would you like to do next? \n1. fight\n2. eat\
 #input potientials
 
 
-#letting user set the pace
-
 def main_program():
     #game title
     clearing.clear()
