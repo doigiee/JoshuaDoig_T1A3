@@ -1,17 +1,20 @@
 # Welcome to 'The Blob Game' README Markdown 
 # JoshuaDoig_T1A3
 
+## [Youtube recording](https://www.youtube.com/watch?v=3159Tvb9l50)
+
 #### Internet Sites Used:
-#### Blob Title Image: https://textart.sh/topic/slime 
-#### Blob Title Text: https://fsymbols.com 
-#### Flowchart: https://app.diagrams.net/?libs=general;flowchart&src=about
-#### Trello - Workspace Manager: https://trello.com/b/74KvlyR2/joshuadoigt1a3
-#### Colorama 0.4.5: https://pypi.org/project/colorama/
-#### Clearing 1.0.0: https://pypi.org/project/clearing/
-#### simple-term-menu 1.5.1: https://pypi.org/project/simple-term-menu/
-#### Grepper chrome extension: https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco?hl=en
-#### W3Schools: https://www.w3schools.com/
-#### Canva: https://www.canva.com/design/DAFNDKfOn1w/iOyEdffqzjnkzfl5uGaSFQ/edit
+#### [Blob Title Image](https://textart.sh/topic/slime)
+#### [Blob Title Text](https://fsymbols.com)
+#### [Flowchart: https](//app.diagrams.net/?libs=general;flowchart&src=about)
+#### [Trello](https://trello.com/b/74KvlyR2/joshuadoigt1a3) Workspace Manager)
+#### [Colorama 0.4.5](https://pypi.org/project/colorama/)
+#### [Clearing 1.0.0](https://pypi.org/project/clearing/)
+#### [simple-term-menu 1.5.1](https://pypi.org/project/simple-term-menu/)
+#### [Grepper chrome extension](https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco?hl=en)
+#### [W3Schools](https://www.w3schools.com/)
+#### [Canva](https://www.canva.com/design/DAFNDKfOn1w/iOyEdffqzjnkzfl5uGaSFQ/edit)
+#### [OBS 28.0.2](https://obsproject.com/) recording
 
 
 # Statement and Purpose
@@ -116,7 +119,7 @@ re evaluated code
 
 ### Day 8 THURSDAY
 Basically finished a fleshed out working porgram still some debugging to do will be updating flowchart a little bit as im rethinking it and will add more classes imports to main if possible. youtube and powerpoint will need to be made in next couple of days as im working on sunday.
-![23/9b](docs/Trello/23-9b.png)
+![23/9b](docs/Trello/23-09b.png)
 ![23/9c](docs/Trello/23-9c.png)
 
 ### Day 9 FRIDAY
@@ -125,15 +128,15 @@ Finally was able to fix the last 2 bugs that I had, stored all unused class and 
 
 countless manual tests and runthroughs to fix bugs, display, and pretty up code.
 
-Starting making powerpoint with 
+Starting making powerpoint and recording.
 
 
 ### Day 10 SATURDAY
-Presentation and tidying, learning more about final features how to do a couple of things.
-
+Presentation and tidying, learning more about final features how to do a couple of things. making presentation with
+![25-09](docs/Trello/25-09.png)
 
 ### Day 11 SUNDAY
-Submittion day
+Submittion day. have work today so submitted yesterday.
 
 # Author
 Joshua Doig
