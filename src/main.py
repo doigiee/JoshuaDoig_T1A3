@@ -31,19 +31,18 @@ def main_program():
 
     print(introduction_text)
     print(help_us_text)
-    #continue prompt
     functions.next(next_continue)
     print('----------------------------------------------------------------')
     clearing.clear()
 
     print(choose_blob_text)
-    #continue prompt
     functions.next(next_continue)
     print('----------------------------------------------------------------')
     clearing.clear()
 
     print(choose_blob_selection)
 
+    #print out blob pixel art
     while True:
         descision = input("make your choice, type '1', '2' or '3': ")
         if descision == "1":
@@ -60,6 +59,7 @@ def main_program():
 
     print("As you touch the egg a warm glow explodes from within, What is this?...")
 
+    #print out your blob dict
     if descision == "1":
         blob_thingy = Blob('calcifer', 'fire', 70, atk = 50, level = 0)
     elif descision == "2":
@@ -81,7 +81,6 @@ def main_program():
 
 
     while blob_thingy.level < 300 and days < 4:
-        # print(f'you have {days_left} days until the town festival and have used {days} day(s) with you blob and your blob\'s level is {blob_thingy.level}')
         # offer activity
         print(what_activity)
         choice = input()
