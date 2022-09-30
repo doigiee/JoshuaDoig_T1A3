@@ -42,7 +42,7 @@ PEP*- Style Guide of Python Code (to the best of my current ability).
 3. Clone my repository by inputting this comand when in the desired location of your terminal/Ubuntu
 
 ```
-git clone https://github.com/Erkan-Kaban/TerminalApp.git
+git clone https://github.com/doigiee/JoshuaDoig_T1A3
 ```
 
 4. Now change into the file location of the cloned repository, looking for the src folder using,
