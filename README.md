@@ -37,30 +37,19 @@ PEP*- Style Guide of Python Code (to the best of my current ability).
 # Installation Instructions
 1. If you do not have Python installed on your computer, please install python [here](https://www.python.org/downloads/).
 
-2. Now install pip onto your computer if you dont already have it installed also, [here](https://www.python.org/downloads/)
+2. Now install pip onto your computer if you don't already have it installed also, [here](https://www.python.org/downloads/)
 
-3. Clone my repository by inputting this comand when in the desired location of your terminal/Ubuntu
+3. Clone my repository by inputting this command when in the desired location of your terminal/Ubuntu
 
 ```
 git clone https://github.com/doigiee/JoshuaDoig_T1A3
 ```
 
 4. Now change into the file location of the cloned repository, looking for the src folder using,
-
 ```
 cd src
 ```
-
-5. Now you'll be able to run the blob game by executing the shell and entering the command
-
-```
-./The_Blob_Game.sh
-```
-
-You should be good to go. If the terminal prompts you to install any further dependancies, of course, press 'y' followed by 'enter key'.
-
-Although If the game still doesn't run you can try running the following command in the terminal while in the cloned repository:
-
+Now all that should be lest is to run the following command while in source
 ```
 python3 main.py
 ```
@@ -68,6 +57,17 @@ OR Try the following if the previous command fails
 ```
 python3 src/main.py
 ```
+
+You should be good to go. If the terminal prompts you to install any further dependancies, of course, press 'y' followed by 'enter key'.
+
+Although If the game still doesn't run you can try running the following command in the terminal while in the cloned repository:
+
+5. Another option is running the blob game by executing the shell and entering the command
+
+```
+./The_Blob_Game.sh
+```
+
 
 
 # Tests
